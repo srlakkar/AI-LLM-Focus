@@ -47,3 +47,9 @@ if st.button("Generate Description"):
 
     except Exception as e:
         st.error(f"Error: {e}")
+        
+
+#Example Usage
+#streamlit run app.py
+
+
