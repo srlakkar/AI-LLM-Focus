@@ -38,7 +38,8 @@ print(f"Loaded and split {len(docs)} document chunks.")
 #Create embeddings and store in Qdrant
 
 # Connect to local Qdrant
-qdrant = QdrantClient(":memory:")  # in-memory for testing
+#qdrant = QdrantClient(":memory:")  # in-memory for testing
+qdrant = QdrantClient(host="localhost", port=6333)  #local qdrant with docker
 collection_name = "pdf_rag"
 
 # Create collection
