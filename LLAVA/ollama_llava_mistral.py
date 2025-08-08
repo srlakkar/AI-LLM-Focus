@@ -27,7 +27,7 @@ def describe_image(image_url):
 
     return response['message']['content']
 
-# Example usage
+# Example usage for LLaVA
 url = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/tasks/ai2d-demo.jpg"
 description = describe_image(url)
 print("Image description:", description)
