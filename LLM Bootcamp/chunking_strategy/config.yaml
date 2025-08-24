@@ -1,0 +1,10 @@
+# -----------------------------------------------------------------------------------------------
+#
+# All the configurations associated with the chunking strategy module.
+#
+# NOTE:
+# Keep this file stored at the project's root directory
+# -----------------------------------------------------------------------------------------------
+
+paths:
+  data_dir: /Users/chandarl/data

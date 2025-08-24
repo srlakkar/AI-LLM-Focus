@@ -1,0 +1,30 @@
+[project]
+name = "chunking_strategy"
+version = "0.1.0"
+description = "llm bootcamp chunking_strategy package"
+authors = [
+    {name = "SupportVectors AI Lab", email = "aston@supportvectors.com"},
+]
+readme = "README.md"
+requires-python = "==3.12.*"
+dependencies = [
+    "chonkie[all,st]>=0.2.2",
+    "docling>=2.7.0",
+    "docling-core>=2.34.1",
+    "langchain>=0.3.14",
+    "langchain-ollama>=0.2.2",
+    "llama-index>=0.12.11",
+    "llama-index-embeddings-huggingface>=0.5.0",
+    "llama-index-embeddings-instructor>=0.3.0",
+    "semchunk>=3.0.1",
+    "svlearn-bootcamp>=0.1.7",
+    "tiktoken>=0.8.0",
+    "transformers>=4.47.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/svlearn_cs"]
